@@ -1,0 +1,1458 @@
+Version: 4.1.0
+Language: en-US
+Entities:
+  d_cliente:
+    Definition:
+      Binding: {Table: dClientes}
+    State: Generated
+    Terms:
+    - d cliente: {State: Generated}
+    - dClientes: {Type: Noun, State: Generated, Weight: 0.99}
+
+  d_cliente.ID_cliente:
+    Definition:
+      Binding: {Table: dClientes, Column: ID_Cliente}
+    State: Generated
+    Terms:
+    - ID cliente: {State: Generated}
+    - ID_Cliente: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  d_cliente.primeiro_nome:
+    Definition:
+      Binding: {Table: dClientes, Column: Primeiro Nome}
+    State: Generated
+    Terms:
+    - primeiro nome: {State: Generated}
+
+  d_cliente.sobrenome:
+    Definition:
+      Binding: {Table: dClientes, Column: Sobrenome}
+    State: Generated
+    Terms:
+    - sobrenome: {State: Generated}
+
+  d_cliente.sexo:
+    Definition:
+      Binding: {Table: dClientes, Column: Sexo}
+    State: Generated
+    Terms:
+    - sexo: {State: Generated}
+
+  d_cliente.data_de_nascimento:
+    Definition:
+      Binding: {Table: dClientes, Column: Data de Nascimento}
+    State: Generated
+    Terms:
+    - data de nascimento: {State: Generated}
+    - date: {State: Generated, Weight: 0.7}
+    - information de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - fact de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - info de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - statistic de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - document de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - figure de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - record de nascimento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    SemanticType: Time
+
+  d_cliente.data_de_nascimento.hierarquia_de_data:
+    Definition:
+      Binding: {Table: dClientes, VariationSource: Data de Nascimento, VariationSet: Variation, Hierarchy: Hierarquia de datas}
+    State: Generated
+    Terms:
+    - hierarquia de data: {State: Generated}
+    - hierarquia de information: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.762}
+    - hierarquia de fact: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.762}
+    - hierarquia de info: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.762}
+    - hierarquia de statistic: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.762}
+    - hierarquia de document: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.739}
+    - hierarquia de figure: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.739}
+    - hierarquia de record: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.739}
+
+  d_cliente.data_de_nascimento.ano:
+    Definition:
+      Binding: {Table: dClientes, VariationSource: Data de Nascimento, VariationSet: Variation, Hierarchy: Hierarquia de datas, HierarchyLevel: Ano}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - data de nascimento ano: {State: Generated}
+    - information de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - fact de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - info de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - statistic de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - document de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - figure de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - record de nascimento ano: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+
+  d_cliente.data_de_nascimento.trimestre:
+    Definition:
+      Binding: {Table: dClientes, VariationSource: Data de Nascimento, VariationSet: Variation, Hierarchy: Hierarquia de datas, HierarchyLevel: Trimestre}
+    State: Generated
+    Terms:
+    - trimestre: {State: Generated}
+    - data de nascimento trimestre: {State: Generated}
+    - information de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - fact de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - info de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - statistic de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - document de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - figure de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - record de nascimento trimestre: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+
+  d_cliente.data_de_nascimento.mê:
+    Definition:
+      Binding: {Table: dClientes, VariationSource: Data de Nascimento, VariationSet: Variation, Hierarchy: Hierarquia de datas, HierarchyLevel: Mês}
+    State: Generated
+    Terms:
+    - mê: {State: Generated}
+    - data de nascimento mê: {State: Generated}
+    - information de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - fact de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - info de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - statistic de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - document de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - figure de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - record de nascimento mê: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+
+  d_cliente.data_de_nascimento.dia:
+    Definition:
+      Binding: {Table: dClientes, VariationSource: Data de Nascimento, VariationSet: Variation, Hierarchy: Hierarquia de datas, HierarchyLevel: Dia}
+    State: Generated
+    Terms:
+    - dia: {State: Generated}
+    - data de nascimento dia: {State: Generated}
+    - information de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - fact de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - info de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - statistic de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - document de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - figure de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - record de nascimento dia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+
+  d_cliente.E_mail:
+    Definition:
+      Binding: {Table: dClientes, Column: E-mail}
+    State: Generated
+    Terms:
+    - E mail: {State: Generated}
+    - E-mail: {Type: Noun, State: Generated, Weight: 0.99}
+    - mail: {State: Generated, Weight: 0.97}
+    - mailing: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - communication: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - posting: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - post-office: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - delivery: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - e correspondence: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+    - e post: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+    - correspondence: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+    - post: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+
+  d_cliente.nome_completo:
+    Definition:
+      Binding: {Table: dClientes, Column: Nome Completo}
+    State: Generated
+    Terms:
+    - nome completo: {State: Generated}
+
+  d_loja:
+    Definition:
+      Binding: {Table: dLojas}
+    State: Generated
+    Terms:
+    - d loja: {State: Generated}
+    - dLojas: {Type: Noun, State: Generated, Weight: 0.99}
+    - loja: {State: Generated, Weight: 0.97}
+
+  d_loja.ID_loja:
+    Definition:
+      Binding: {Table: dLojas, Column: ID_Loja}
+    State: Generated
+    Terms:
+    - ID loja: {State: Generated}
+    - ID_Loja: {Type: Noun, State: Generated, Weight: 0.99}
+    - loja: {State: Generated, Weight: 0.97}
+    - identification loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  d_loja.cidade:
+    Definition:
+      Binding: {Table: dLojas, Column: Cidade}
+    State: Generated
+    Terms:
+    - cidade: {State: Generated}
+
+  d_loja.sigla_estado:
+    Definition:
+      Binding: {Table: dLojas, Column: Sigla Estado}
+    State: Generated
+    Terms:
+    - sigla estado: {State: Generated}
+    - state or province: {State: Generated, Weight: 0.7}
+    SemanticType: Location
+
+  d_loja.gerente:
+    Definition:
+      Binding: {Table: dLojas, Column: Gerente}
+    State: Generated
+    Terms:
+    - gerente: {State: Generated}
+
+  d_loja.estado:
+    Definition:
+      Binding: {Table: dLojas, Column: Estado}
+    State: Generated
+    Terms:
+    - estado: {State: Generated}
+    - state or province: {State: Generated, Weight: 0.7}
+    SemanticType: Location
+
+  d_loja.região:
+    Definition:
+      Binding: {Table: dLojas, Column: Região}
+    State: Generated
+    Terms:
+    - região: {State: Generated}
+
+  f_devolucoe:
+    Definition:
+      Binding: {Table: fDevolucoes}
+    State: Generated
+    Terms:
+    - f devolucoe: {State: Generated}
+    - fDevolucoes: {Type: Noun, State: Generated, Weight: 0.99}
+
+  f_devolucoe.ID_dev:
+    Definition:
+      Binding: {Table: fDevolucoes, Column: ID_Dev}
+    State: Generated
+    Terms:
+    - ID dev: {State: Generated}
+    - ID_Dev: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification dev: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity dev: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier dev: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential dev: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  f_devolucoe.sku:
+    Definition:
+      Binding: {Table: fDevolucoes, Column: SKU}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sku: {State: Generated}
+
+  f_devolucoe.quantidade_devolvida:
+    Definition:
+      Binding: {Table: fDevolucoes, Column: Quantidade Devolvida}
+    State: Generated
+    Terms:
+    - quantidade devolvida: {State: Generated}
+
+  f_devolucoe.ID_loja:
+    Definition:
+      Binding: {Table: fDevolucoes, Column: ID_Loja}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ID loja: {State: Generated}
+    - ID_Loja: {Type: Noun, State: Generated, Weight: 0.99}
+    - loja: {State: Generated, Weight: 0.97}
+    - identification loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  f_devolucoe.data_da_devolução:
+    Definition:
+      Binding: {Table: fDevolucoes, Column: Data da Devolução}
+    State: Generated
+    Terms:
+    - data da devolução: {State: Generated}
+    - date: {State: Generated, Weight: 0.7}
+    - information da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - fact da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - info da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - statistic da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - document da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - figure da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - record da devolução: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    SemanticType: Time
+
+  f_devolucoe.ID_Código_cliente:
+    Definition:
+      Binding: {Table: fDevolucoes, Column: ID_Código Cliente}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ID_Código cliente: {State: Generated}
+
+  d_produto:
+    Definition:
+      Binding: {Table: dProdutos}
+    State: Generated
+    Terms:
+    - d produto: {State: Generated}
+    - dProdutos: {Type: Noun, State: Generated, Weight: 0.99}
+
+  d_produto.sku:
+    Definition:
+      Binding: {Table: dProdutos, Column: SKU}
+    State: Generated
+    Terms:
+    - sku: {State: Generated}
+
+  d_produto.produto:
+    Definition:
+      Binding: {Table: dProdutos, Column: Produto}
+    State: Generated
+    Terms:
+    - produto: {State: Generated}
+
+  d_produto.marca:
+    Definition:
+      Binding: {Table: dProdutos, Column: Marca}
+    State: Generated
+    Terms:
+    - marca: {State: Generated}
+
+  d_produto.categoria:
+    Definition:
+      Binding: {Table: dProdutos, Column: Categoria}
+    State: Generated
+    Terms:
+    - categoria: {State: Generated}
+
+  d_produto.preço_unitário:
+    Definition:
+      Binding: {Table: dProdutos, Column: Preço Unitário}
+    State: Generated
+    Terms:
+    - preço unitário: {State: Generated}
+
+  d_produto.custo_unitário:
+    Definition:
+      Binding: {Table: dProdutos, Column: Custo Unitário}
+    State: Generated
+    Terms:
+    - custo unitário: {State: Generated}
+
+  d_forma_pagamento:
+    Definition:
+      Binding: {Table: dFormaPagamento}
+    State: Generated
+    Terms:
+    - d forma pagamento: {State: Generated}
+    - dFormaPagamento: {Type: Noun, State: Generated, Weight: 0.99}
+
+  d_forma_pagamento.id_forma_pagamento:
+    Definition:
+      Binding: {Table: dFormaPagamento, Column: Id_FormaPagamento}
+    State: Generated
+    Terms:
+    - id forma pagamento: {State: Generated}
+    - Id_FormaPagamento: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identity forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identifier forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - credential forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  d_forma_pagamento.forma_pagamento:
+    Definition:
+      Binding: {Table: dFormaPagamento, Column: FormaPagamento}
+    State: Generated
+    Terms:
+    - forma pagamento: {State: Generated}
+    - Forma de Pagamento: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Forma de Pagamento: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - FormaPagamento: {Type: Noun, State: Generated, Weight: 0.99}
+
+  f_venda:
+    Definition:
+      Binding: {Table: fVendas}
+    State: Generated
+    Terms:
+    - f venda: {State: Generated}
+    - fVendas: {Type: Noun, State: Generated, Weight: 0.99}
+    - venda: {State: Generated, Weight: 0.97}
+
+  f_venda.sku:
+    Definition:
+      Binding: {Table: fVendas, Column: SKU}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sku: {State: Generated}
+
+  f_venda.quantidade:
+    Definition:
+      Binding: {Table: fVendas, Column: Quantidade}
+    State: Generated
+    Terms:
+    - quantidade: {State: Generated}
+
+  f_venda.ID_loja:
+    Definition:
+      Binding: {Table: fVendas, Column: ID_Loja}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ID loja: {State: Generated}
+    - ID_Loja: {Type: Noun, State: Generated, Weight: 0.99}
+    - loja: {State: Generated, Weight: 0.97}
+    - identification loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential loja: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  f_venda.data_da_venda:
+    Definition:
+      Binding: {Table: fVendas, Column: Data da Venda}
+    State: Generated
+    Terms:
+    - data da venda: {State: Generated}
+    - date: {State: Generated, Weight: 0.7}
+    - information da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - fact da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - info da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - statistic da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - document da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - figure da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - record da venda: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    SemanticType: Time
+
+  f_venda.ID_forma_pagamento:
+    Definition:
+      Binding: {Table: fVendas, Column: ID_FormaPagamento}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ID forma pagamento: {State: Generated}
+    - ID_FormaPagamento: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identity forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identifier forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - credential forma pagamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  f_venda.ID_cliente:
+    Definition:
+      Binding: {Table: fVendas, Column: ID_Cliente}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ID cliente: {State: Generated}
+    - ID_Cliente: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential cliente: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  f_venda.desconto:
+    Definition:
+      Binding: {Table: fVendas, Column: '% Desconto'}
+    State: Generated
+    Terms:
+    - '% desconto': {State: Generated}
+    - percentage desconto: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - pct desconto: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  f_venda.desconto_recomendado:
+    Definition:
+      Binding: {Table: fVendas, Column: '% Desconto (recomendado)'}
+    State: Generated
+    Terms:
+    - '% desconto (recomendado)': {State: Generated}
+    - '% desconto': {State: Generated, Weight: 0.75}
+    - percentage desconto (recomendado): {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.624}
+    - pct desconto (recomendado): {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+
+  f_venda.valor_venda:
+    Definition:
+      Binding: {Table: fVendas, Column: Valor Venda}
+    State: Generated
+    Terms:
+    - valor venda: {State: Generated}
+    - venda: {State: Generated, Weight: 0.97}
+
+  f_venda.desconto1:
+    Definition:
+      Binding: {Table: fVendas, Column: Desconto}
+    State: Generated
+    Terms:
+    - desconto: {State: Generated}
+
+  f_venda.valor_cobrado:
+    Definition:
+      Binding: {Table: fVendas, Column: Valor Cobrado}
+    State: Generated
+    Terms:
+    - valor cobrado: {State: Generated}
+
+  f_venda.valor_cobrado_recomendado:
+    Definition:
+      Binding: {Table: fVendas, Column: Valor Cobrado (recomendado)}
+    State: Generated
+    Terms:
+    - valor cobrado (recomendado): {State: Generated}
+    - valor cobrado: {State: Generated, Weight: 0.75}
+
+  d_calendario:
+    Definition:
+      Binding: {Table: dCalendario}
+    State: Generated
+    Terms:
+    - d calendario: {State: Generated}
+    - dCalendario: {Type: Noun, State: Generated, Weight: 0.99}
+
+  d_calendario.data:
+    Definition:
+      Binding: {Table: dCalendario, Column: Data}
+    State: Generated
+    Terms:
+    - data: {State: Generated}
+    - date: {State: Generated, Weight: 0.7}
+    - information: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - fact: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - info: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - statistic: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - document: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - figure: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - record: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    SemanticType: Time
+
+  d_calendario.ano:
+    Definition:
+      Binding: {Table: dCalendario, Column: Ano}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+
+  d_calendario.mê:
+    Definition:
+      Binding: {Table: dCalendario, Column: Mês}
+    State: Generated
+    Terms:
+    - mê: {State: Generated}
+
+  d_calendario.nome_do_mê:
+    Definition:
+      Binding: {Table: dCalendario, Column: Nome do Mês}
+    State: Generated
+    Terms:
+    - nome do mê: {State: Generated}
+    - Mê: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Mê: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  d_calendario.mes_abrev:
+    Definition:
+      Binding: {Table: dCalendario, Column: Mes Abrev}
+    State: Generated
+    Terms:
+    - mes abrev: {State: Generated}
+    - me abrev: {Type: Noun, State: Generated, Weight: 0.78}
+
+  d_calendario.mes_ano:
+    Definition:
+      Binding: {Table: dCalendario, Column: Mes/Ano}
+    State: Generated
+    Terms:
+    - mes/ano: {State: Generated}
+    - me/ano: {Type: Noun, State: Generated, Weight: 0.78}
+    - mes: {State: Generated, Weight: 0.97}
+    - me: {Type: Noun, State: Generated, Weight: 0.7566}
+    - mes ano: {State: Generated, Weight: 0.97}
+    - me ano: {Type: Noun, State: Generated, Weight: 0.7566}
+
+  d_calendario.ano_me:
+    Definition:
+      Binding: {Table: dCalendario, Column: AnoMes}
+    State: Generated
+    Terms:
+    - ano me: {State: Generated}
+    - AnoMes: {Type: Noun, State: Generated, Weight: 0.99}
+
+  medida:
+    Definition:
+      Binding: {Table: Medidas}
+    State: Generated
+    Terms:
+    - medida: {State: Generated}
+
+  medida.qtd_de_produtos_linhas:
+    Definition:
+      Binding: {Table: Medidas, Measure: Qtd de Produtos (linhas)}
+    State: Generated
+    Terms:
+    - qtd de produtos (linhas): {State: Generated}
+    - qtd de produtos: {State: Generated, Weight: 0.75}
+
+  medida.qtde_de_produtos:
+    Definition:
+      Binding: {Table: Medidas, Measure: Qtde de Produtos}
+    State: Generated
+    Terms:
+    - qtde de produtos: {State: Generated}
+
+  medida.qtde_de_marcas:
+    Definition:
+      Binding: {Table: Medidas, Measure: Qtde de Marcas}
+    State: Generated
+    Terms:
+    - qtde de marcas: {State: Generated}
+
+  medida.total_de_itens_vendidos:
+    Definition:
+      Binding: {Table: Medidas, Measure: Total de Itens Vendidos}
+    State: Generated
+    Terms:
+    - total de itens vendidos: {State: Generated}
+    - aggregate de iten vendido: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - overall de iten vendido: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+
+  medida.média_de_itens_vendidos:
+    Definition:
+      Binding: {Table: Medidas, Measure: Média de Itens Vendidos}
+    State: Generated
+    Terms:
+    - média de itens vendidos: {State: Generated}
+
+  medida.qtd_de_clientes:
+    Definition:
+      Binding: {Table: Medidas, Measure: Qtd de Clientes}
+    State: Generated
+    Terms:
+    - qtd de clientes: {State: Generated}
+
+  medida.faturamento_de_smartphones:
+    Definition:
+      Binding: {Table: Medidas, Measure: Faturamento de Smartphones}
+    State: Generated
+    Terms:
+    - faturamento de smartphones: {State: Generated}
+
+  medida.total_faturamento:
+    Definition:
+      Binding: {Table: Medidas, Measure: Total Faturamento}
+    State: Generated
+    Terms:
+    - total faturamento: {State: Generated}
+    - Faturamento: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Faturamento: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - aggregate faturamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - overall faturamento: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  medida.faturamento_smartphones_2020:
+    Definition:
+      Binding: {Table: Medidas, Measure: Faturamento Smartphones 2020}
+    State: Generated
+    Terms:
+    - faturamento smartphones 2020: {State: Generated}
+
+  medida.faturamento_LY_last_year_ano_passado:
+    Definition:
+      Binding: {Table: Medidas, Measure: Faturamento LY (last year/ano passado)}
+    State: Generated
+    Terms:
+    - faturamento LY (last year/ano passado): {State: Generated}
+    - faturamento LY: {State: Generated, Weight: 0.75}
+    - faturamento LY (last year: {State: Generated, Weight: 0.97}
+    - faturamento LY ( last year ano passado ): {State: Generated, Weight: 0.97}
+    - ano passado): {State: Generated, Weight: 0.97}
+    - faturamento ly (last yr: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.78}
+    - faturamento ly ( end year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( final year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( closing year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( concluding year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( finishing year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( former year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( latest year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( latter year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - faturamento ly ( past year: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+
+  medida.ticket_médio:
+    Definition:
+      Binding: {Table: Medidas, Measure: Ticket Médio}
+    State: Generated
+    Terms:
+    - ticket médio: {State: Generated}
+
+Relationships:
+  d_cliente_data_de_nascimento_hierarquia_de_data_has_d_cliente_data_de_nascimento_ano:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.hierarquia_de_data, Object: d_cliente.data_de_nascimento.ano}
+      State: Generated
+      Weight: 0.99
+      ID: hierarquia_de_data_have_anos
+
+  d_cliente_data_de_nascimento_has_hierarquia_de_data:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento, Object: d_cliente.data_de_nascimento.hierarquia_de_data}
+      State: Generated
+      Weight: 0.99
+      ID: data_de_nascimentos_have_hierarquia_de_data
+
+  f_venda_has_d_calendario:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: d_calendario}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_d_calendarios
+    - Attribute: {Subject: d_calendario, Object: f_venda}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_f_venda
+
+  f_venda_has_d_cliente:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: d_cliente}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_d_clientes
+    - Attribute: {Subject: d_cliente, Object: f_venda}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_f_venda
+
+  f_venda_has_d_forma_pagamento:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: d_forma_pagamento}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_d_forma_pagamentos
+    - Attribute: {Subject: d_forma_pagamento, Object: f_venda}
+      State: Generated
+      Weight: 0.99
+      ID: d_forma_pagamentos_have_f_venda
+
+  f_venda_has_d_produto:
+    Binding: {Table: fVendas}
+    State: Generated
+    Roles:
+      d_produto:
+        Target: d_produto
+        Nouns:
+        - sku: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: d_produto}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_d_produtos
+    - Attribute: {Subject: d_produto, Object: f_venda}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_f_venda
+
+  f_venda_has_d_loja:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: d_loja}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_d_loja
+    - Attribute: {Subject: d_loja, Object: f_venda}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_f_venda
+
+  f_devolucoe_has_d_cliente:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: d_cliente}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_d_clientes
+    - Attribute: {Subject: d_cliente, Object: f_devolucoe}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_f_devolucoes
+
+  f_devolucoe_has_d_calendario:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: d_calendario}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_d_calendarios
+    - Attribute: {Subject: d_calendario, Object: f_devolucoe}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_f_devolucoes
+
+  f_devolucoe_has_d_produto:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Roles:
+      d_produto:
+        Target: d_produto
+        Nouns:
+        - sku: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: d_produto}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_d_produtos
+    - Attribute: {Subject: d_produto, Object: f_devolucoe}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_f_devolucoes
+
+  f_devolucoe_has_d_loja:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: d_loja}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_d_loja
+    - Attribute: {Subject: d_loja, Object: f_devolucoe}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_f_devolucoes
+
+  f_venda_has_medida_ticket_médio:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.ticket_médio}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_ticket_médio
+
+  f_venda_has_medida_faturamento_LY_last_year_ano_passado:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.faturamento_LY_last_year_ano_passado}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_faturamento_LY_last_year_ano_passado
+
+  f_venda_has_medida_faturamento_smartphones_2020:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.faturamento_smartphones_2020}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_faturamento_smartphones_2020
+
+  f_venda_has_medida_total_faturamento:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.total_faturamento}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_total_faturamento
+
+  f_venda_has_medida_faturamento_de_smartphones:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.faturamento_de_smartphones}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_faturamento_de_smartphones
+
+  d_cliente_has_medida_qtd_de_clientes:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: medida.qtd_de_clientes}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_qtd_de_clientes
+
+  f_venda_has_medida_média_de_itens_vendidos:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.média_de_itens_vendidos}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_média_de_itens_vendidos
+
+  f_venda_has_medida_total_de_itens_vendidos:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: medida.total_de_itens_vendidos}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_total_de_itens_vendidos
+
+  d_produto_has_medida_qtde_de_marcas:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: medida.qtde_de_marcas}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_qtde_de_marcas
+
+  d_produto_has_medida_qtde_de_produtos:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: medida.qtde_de_produtos}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_qtde_de_produtos
+
+  d_produto_has_medida_qtd_de_produtos_linhas:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: medida.qtd_de_produtos_linhas}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_qtd_de_produtos_linhas
+
+  d_calendario_has_ano_me:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.ano_me}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_ano_me
+
+  d_calendario_has_mes_ano:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.mes_ano}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_mes_anos
+
+  d_calendario_has_mes_abrev:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.mes_abrev}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_mes_abrevs
+
+  d_calendario_has_nome_do_mê:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.nome_do_mê}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_nome_do_mê
+
+  d_calendario_has_mê:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.mê}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_mê
+
+  d_calendario_has_ano:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.ano}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_anos
+
+  d_calendario_has_data:
+    Binding: {Table: dCalendario}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_calendario, Object: d_calendario.data}
+      State: Generated
+      Weight: 0.99
+      ID: d_calendarios_have_data
+
+  f_venda_has_valor_cobrado_recomendado:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.valor_cobrado_recomendado}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_valor_cobrado_recomendado
+    - Adjective:
+        Subject: f_venda
+        Adjectives:
+        - expensive: {State: Generated}
+        Antonyms:
+        - cheap: {State: Generated}
+        Measurement: f_venda.valor_cobrado_recomendado
+      State: Generated
+      Weight: 0.99
+      ID: valor_cobrado_recomendado_indicates_how_expensive_f_venda_are
+
+  f_venda_has_valor_cobrado:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.valor_cobrado}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_valor_cobrados
+    - Adjective:
+        Subject: f_venda
+        Adjectives:
+        - expensive: {State: Generated}
+        Antonyms:
+        - cheap: {State: Generated}
+        Measurement: f_venda.valor_cobrado
+      State: Generated
+      Weight: 0.99
+      ID: valor_cobrado_indicates_how_expensive_f_venda_are
+
+  f_venda_has_desconto1:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.desconto1}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_descontos
+    - Adjective:
+        Subject: f_venda
+        Adjectives:
+        - expensive: {State: Generated}
+        Antonyms:
+        - cheap: {State: Generated}
+        Measurement: f_venda.desconto1
+      State: Generated
+      Weight: 0.99
+      ID: desconto_indicates_how_expensive_f_venda_are
+
+  f_venda_has_valor_venda:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.valor_venda}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_valor_venda
+    - Adjective:
+        Subject: f_venda
+        Adjectives:
+        - expensive: {State: Generated}
+        Antonyms:
+        - cheap: {State: Generated}
+        Measurement: f_venda.valor_venda
+      State: Generated
+      Weight: 0.99
+      ID: valor_venda_indicates_how_expensive_f_venda_are
+
+  f_venda_has_desconto_recomendado:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.desconto_recomendado}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have__desconto_recomendado
+
+  f_venda_has_desconto:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.desconto}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have__descontos
+
+  f_venda_has_data_da_venda:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.data_da_venda}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_data_da_venda
+
+  f_venda_has_quantidade:
+    Binding: {Table: fVendas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_venda, Object: f_venda.quantidade}
+      State: Generated
+      Weight: 0.99
+      ID: f_venda_have_quantidades
+
+  d_forma_pagamento_has_forma_pagamento:
+    Binding: {Table: dFormaPagamento}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_forma_pagamento, Object: d_forma_pagamento.forma_pagamento}
+      State: Generated
+      Weight: 0.99
+      ID: d_forma_pagamentos_have_forma_pagamentos
+
+  d_forma_pagamento_has_id_forma_pagamento:
+    Binding: {Table: dFormaPagamento}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_forma_pagamento, Object: d_forma_pagamento.id_forma_pagamento}
+      State: Generated
+      Weight: 0.99
+      ID: d_forma_pagamentos_have_id_forma_pagamentos
+
+  d_produto_has_custo_unitário:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: d_produto.custo_unitário}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_custo_unitários
+    - Adjective:
+        Subject: d_produto
+        Adjectives:
+        - expensive: {State: Generated}
+        Antonyms:
+        - cheap: {State: Generated}
+        Measurement: d_produto.custo_unitário
+      State: Generated
+      Weight: 0.99
+      ID: custo_unitário_indicates_how_expensive_d_produtos_are
+
+  d_produto_has_preço_unitário:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: d_produto.preço_unitário}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_preço_unitários
+    - Adjective:
+        Subject: d_produto
+        Adjectives:
+        - expensive: {State: Generated}
+        Antonyms:
+        - cheap: {State: Generated}
+        Measurement: d_produto.preço_unitário
+      State: Generated
+      Weight: 0.99
+      ID: preço_unitário_indicates_how_expensive_d_produtos_are
+
+  d_produto_has_categoria:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: d_produto.categoria}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_categorias
+
+  d_produto_has_marca:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: d_produto.marca}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_marcas
+
+  d_produto_has_produto:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: d_produto.produto}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_produtos
+
+  d_produto_has_sku:
+    Binding: {Table: dProdutos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_produto, Object: d_produto.sku}
+      State: Generated
+      Weight: 0.99
+      ID: d_produtos_have_skus
+
+  f_devolucoe_has_data_da_devolução:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: f_devolucoe.data_da_devolução}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_data_da_devoluçãos
+
+  f_devolucoe_has_quantidade_devolvida:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: f_devolucoe.quantidade_devolvida}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_quantidade_devolvidas
+
+  f_devolucoe_has_ID_dev:
+    Binding: {Table: fDevolucoes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: f_devolucoe, Object: f_devolucoe.ID_dev}
+      State: Generated
+      Weight: 0.99
+      ID: f_devolucoes_have_ID_devs
+
+  d_loja_has_região:
+    Binding: {Table: dLojas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_loja, Object: d_loja.região}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_regiãos
+
+  d_loja_has_estado:
+    Binding: {Table: dLojas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_loja, Object: d_loja.estado}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_estado
+
+  d_loja_has_gerente:
+    Binding: {Table: dLojas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_loja, Object: d_loja.gerente}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_gerentes
+
+  d_loja_has_sigla_estado:
+    Binding: {Table: dLojas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_loja, Object: d_loja.sigla_estado}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_sigla_estado
+
+  d_loja_has_cidade:
+    Binding: {Table: dLojas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_loja, Object: d_loja.cidade}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_cidades
+
+  d_loja_has_ID_loja:
+    Binding: {Table: dLojas}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_loja, Object: d_loja.ID_loja}
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_have_ID_loja
+
+  d_cliente_has_nome_completo:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.nome_completo}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_nome_completos
+
+  d_cliente_has_E_mail:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.E_mail}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_E_mails
+
+  d_cliente_has_data_de_nascimento:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.data_de_nascimento}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_data_de_nascimentos
+
+  d_cliente_has_sexo:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.sexo}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_sexos
+
+  d_cliente_has_sobrenome:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.sobrenome}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_sobrenomes
+
+  d_cliente_has_primeiro_nome:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.primeiro_nome}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_primeiro_nome
+
+  d_cliente_has_ID_cliente:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente, Object: d_cliente.ID_cliente}
+      State: Generated
+      Weight: 0.99
+      ID: d_clientes_have_ID_clientes
+
+  d_loja_in_estado:
+    Binding: {Table: dLojas}
+    State: Generated
+    SemanticSlots:
+      Where: d_loja.estado
+    Phrasings:
+    - Preposition:
+        Subject: d_loja
+        Prepositions:
+        - in: {State: Generated}
+        Object: d_loja.estado
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_are_in_estado
+
+  d_loja_in_sigla_estado:
+    Binding: {Table: dLojas}
+    State: Generated
+    SemanticSlots:
+      Where: d_loja.sigla_estado
+    Phrasings:
+    - Preposition:
+        Subject: d_loja
+        Prepositions:
+        - in: {State: Generated}
+        Object: d_loja.sigla_estado
+      State: Generated
+      Weight: 0.99
+      ID: d_loja_are_in_sigla_estado
+
+  d_cliente_data_de_nascimento_hierarquia_de_data_has_d_cliente_data_de_nascimento_trimestre:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.hierarquia_de_data, Object: d_cliente.data_de_nascimento.trimestre}
+      State: Generated
+      Weight: 0.99
+      ID: hierarquia_de_data_have_trimestres
+
+  d_cliente_data_de_nascimento_hierarquia_de_data_has_d_cliente_data_de_nascimento_mê:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.hierarquia_de_data, Object: d_cliente.data_de_nascimento.mê}
+      State: Generated
+      Weight: 0.99
+      ID: hierarquia_de_data_have_mê
+
+  d_cliente_data_de_nascimento_hierarquia_de_data_has_d_cliente_data_de_nascimento_dia:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.hierarquia_de_data, Object: d_cliente.data_de_nascimento.dia}
+      State: Generated
+      Weight: 0.99
+      ID: hierarquia_de_data_have_dias
+
+  d_cliente_data_de_nascimento_ano_has_d_cliente_data_de_nascimento_trimestre:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.ano, Object: d_cliente.data_de_nascimento.trimestre}
+      State: Generated
+      Weight: 0.99
+      ID: anos_have_trimestres
+    - Attribute: {Subject: d_cliente.data_de_nascimento.trimestre, Object: d_cliente.data_de_nascimento.ano}
+      State: Generated
+      Weight: 0.99
+      ID: trimestres_have_anos
+    - Preposition:
+        Subject: d_cliente.data_de_nascimento.trimestre
+        Prepositions:
+        - in: {State: Generated}
+        Object: d_cliente.data_de_nascimento.ano
+      State: Generated
+      Weight: 0.99
+      ID: trimestres_are_in_anos
+
+  d_cliente_data_de_nascimento_trimestre_has_d_cliente_data_de_nascimento_mê:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.trimestre, Object: d_cliente.data_de_nascimento.mê}
+      State: Generated
+      Weight: 0.99
+      ID: trimestres_have_mê
+    - Attribute: {Subject: d_cliente.data_de_nascimento.mê, Object: d_cliente.data_de_nascimento.trimestre}
+      State: Generated
+      Weight: 0.99
+      ID: mê_have_trimestres
+    - Preposition:
+        Subject: d_cliente.data_de_nascimento.mê
+        Prepositions:
+        - in: {State: Generated}
+        Object: d_cliente.data_de_nascimento.trimestre
+      State: Generated
+      Weight: 0.99
+      ID: mê_are_in_trimestres
+
+  d_cliente_data_de_nascimento_mê_has_d_cliente_data_de_nascimento_dia:
+    Binding: {Table: dClientes}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: d_cliente.data_de_nascimento.mê, Object: d_cliente.data_de_nascimento.dia}
+      State: Generated
+      Weight: 0.99
+      ID: mê_have_dias
+    - Attribute: {Subject: d_cliente.data_de_nascimento.dia, Object: d_cliente.data_de_nascimento.mê}
+      State: Generated
+      Weight: 0.99
+      ID: dias_have_mê
+    - Preposition:
+        Subject: d_cliente.data_de_nascimento.dia
+        Prepositions:
+        - in: {State: Generated}
+        Object: d_cliente.data_de_nascimento.mê
+      State: Generated
+      Weight: 0.99
+      ID: dias_are_in_mê
+

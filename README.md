@@ -26,6 +26,11 @@ Dashboard:
 
 Link do vídeo: https://youtu.be/Lc8KeMzPtX0
 
+Relacionamentos: arquitetura estrela
+
+<img width="584" alt="Screenshot_97" src="https://github.com/user-attachments/assets/7fc07804-f54e-4a8c-b3cf-eee459ce3399" />
+
+
 
 
 

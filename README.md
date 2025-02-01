@@ -24,5 +24,8 @@ Dashboard:
 <img width="869" alt="Screenshot_95" src="https://github.com/user-attachments/assets/1d2aeb71-2d83-494f-9cab-c173f1d8fed0" />
 
 
+Link do vídeo: https://youtu.be/Lc8KeMzPtX0
+
+
 
 
